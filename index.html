@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de"> 
+<head>
+	<title>JavaScipt</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<script src="./js/index.js" async></script>
+</head>
+<body>
+<div id="wrap">
+
+	<form action="#" id="form1" method="post">
+		<p>
+			<strong>Abflughafen:</strong>
+			<select id="flug">
+					<option value="0">Bitte auswählen</option>
+					<option value="hh">Hamburg</option>
+					<option value="sn">Schwerin</option>
+					<option value="h">Hannover</option>
+				</select>
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Reisedauer:</strong>
+			<select id="dauer">
+					<option value="0">Bitte auswählen</option>
+					<option value="1">1 Woche</option>
+					<option value="2">2 Wochen</option>
+					<option value="3">3 Wochen</option>
+				</select>
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Reisende:</strong>
+				<select id="person">
+					<option value="0">Bitte auswählen</option>
+					<option value="Eine Person">1 Person</option>
+					<option value="Zwei Personen">2 Personen</option>
+					<option value="Drei Personen">3 Personen</option>
+				</select>
+		</p>
+		<!--radioButton-->
+		<p class="klein">
+			<strong>Zimmertyp :</strong> <br />
+				<input type="radio" name="zimmer" value="Einzelzimmer" />
+				Einzelzimmer
+				<input type="radio" name="zimmer" value="Doppelzimmer" />
+				Doppelzimmer
+				<input type="radio" name="zimmer" value="Familienzimmer" />
+				Familienzimmer
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Vorname: </strong>
+			<input type="text" id="vn" placeholder="Muster: Hans Ralf(1Buchst. Gross)" />
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Name: </strong>
+			<input type="text" id="nn" placeholder="Muster: Graf von(1Buchst. Gross)" />
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Straße: </strong>
+			<input type="text" id="str" placeholder="Muster: Marktstr, 22a(1Buchst. Gross)" />
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>PLZ: </strong>
+			<input type="text" id="plz" placeholder="Muster: 5 stellig NUR Zahlen" />
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>Wohnort: </strong>
+			<input type="text" id="ort" placeholder="Muster: Hamburg|Schwerin|Hannover" />
+		</p>
+		<!--+++++++-->
+		<p>
+			<strong>E-Mail: </strong>
+			<input type="text" id="mail" placeholder="Muster: test@test.(hh|sn|h)" />
+		</p>
+		<!--checkBoxen-->
+		<h2>Wüsche an das Hotel</h2>
+		<p class="klein">
+			<input type="checkbox" name="wunsch" value="Nichtraucherzimmer" /> Nichtraucherzimmer
+			<input type="checkbox" name="wunsch" value="Raucherzimmer" /> Raucherzimmer<br />
+			<input type="checkbox" name="wunsch" value="Fr&#252;hanreise" /> Frühanreise
+			<input type="checkbox" name="wunsch" value="Spätanreise" />	Spätanreise
+			<input type="checkbox" name="wunsch" value="Parkplatz" />	Parkplatz
+		</p>
+		<!--SchaltFlächen-->
+		<p class="b">
+			<input type="submit" value="BUCHEN" />
+			<input type="reset" value="CLEAR" />
+		</p>
+
+	</form>
+	<!-- +++++++++++++++++++ -->
+	<div id="ausgabe"></div>
+			
+</div><!--ende wraper-->
+</body>
+</html>
